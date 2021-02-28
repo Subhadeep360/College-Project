@@ -18,11 +18,3 @@ def predict():
 
 
     return render_template("result.html",result = prediction[0])
-
-# IMPORTANT
-# The following line, app.run(debug=True) should only be uncommented when running the app locally using 'flask run'.
-# On heroku, the app is started by the command 'web: gunicorn flask_app:app'
-# If 'app.run()' is used, then the app will crash with error 'Address already in use', since gunicorn is already running
-# DO NOT UNCOMMENT THE FOLLOWING LINE WHEN PUSHING TO GIT
-
-# app.run(debug=True)
